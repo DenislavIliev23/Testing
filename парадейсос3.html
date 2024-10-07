@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Paradeisos</title>
+  <style>
+    body {
+        text-align: center;
+        max-width: 100%;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  background-color: #004AAD;
+}
+
+nav li {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+img {width: 100%;}
+
+nav a {
+  text-decoration: none;
+  color: white; }
+
+.buton {
+    background-color:#004AAD;
+    color: white ;
+    padding: 40px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
+}
+  
+footer {
+    background-color: #004AAD ;
+    color: white;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.image-container {  
+  padding-top:;
+  display: flex;   
+}
+
+.image-container img {
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+  width: 60%;  /* Set width for responsive layout */
+  margin: 20px;
+  padding: 20px;
+}
+
+.image-container input[type=checkbox] {  /* Hide checkboxes */
+  display: none;
+}
+
+.image-container input[type=checkbox]:checked ~ img {
+  transform: scale(1.2);  /* Increase zoom level */
+  cursor: zoom-out;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><input type="search" id="searchbox" name="search" placeholder="Search here...">
+            <button type="submit">Search</button></li>
+        <li><a href="парадейсос3.html">HOME</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="locations.html">LOCATIONS</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="menu.html">MENU</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home">
+      <img src="ani/Home.png" alt="home">
+    </section>
+
+    <section class="about">
+      <img src="ani/About.png" alt="about">
+    </section>
+
+    <section class="menu">
+        <img src="ani/menu.png" style="width: 70%"><alt=menu">
+    </section>
+
+    <section class="info">
+        <img src="ani/info.png" alt="info">
+    </section>
+
+    <div class="image-container">  <div class="click-zoom">   <label>
+      <input type="checkbox">  <img src="ani/4.png" alt="Image 1 description">  </label>
+  </div>
+  
+  <div class="click-zoom">   <label>
+      <input type="checkbox">  <img src="ani/5.png" alt="Image 2 description">  </label>
+  </div>
+  </div>
+
+  <div class="click-zoom">   <label>
+    <input type="checkbox">  <img src="ani/5.png" alt="Image 2 description">  </label>
+</div>
+</div>
+  
+
+    <section class="contact">
+        <img src="ani/Contact.png" alt="contact">
+        <div class="buton">
+            <a href="locations.html" style="color: white; text-decoration: none;"><b>Book a Table</b></a>
+        </div>
+    </section>
+
+
+
+    <section class="feedback">
+        <img src="ani/Feedback.png" alt="feedback">
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; Restaurant Paradeisos 2024</p>
+    </div>
+  </footer>
+</body>
+</html>
